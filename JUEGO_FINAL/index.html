@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRUEBA (ARKA NOID)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="canvas-area">
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas"></canvas>
+    </div>
+  </main>
+
+ 
+    <div id="game-hud" class="hud-bar hidden">
+    <span id="hud-player-name">Jugador</span>
+    <span id="hud-score">Puntuación: 0</span>
+    <span id="hud-health">Salud: </span>
+  </div>
+
+    <div id="start-modal" class="modal-screen">
+    <h1>Bienvenido al ArKanoid</h1>
+    <input type="text" id="player-name-input" placeholder="Introduce tu nombre" />
+    <button id="start-game-btn">INICIAR JUEGO</button>
+  </div>
+
+    <div id="game-over-modal" class="modal-screen hidden">
+    <h1 id="game-status-text">GAME OVER</h1>
+    <p id="game-status-date">Fecha: </p>
+    <button id="restart-game-btn">REINICIAR</button>
+  </div>
+  <script src="matrix.js"></script>
+  <script src="main.js"></script>
+  <script src="paddle.js"></script>
+  <script src="ball.js"></script>
+  <script src="ui_manager.js"></script>
+  <script src="sound_manager.js"></script> 
+  <script src="game.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
