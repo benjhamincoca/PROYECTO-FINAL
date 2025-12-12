@@ -1,0 +1,120 @@
+/* styles.css (CÓDIGO COMPLETO PARA REEMPLAZAR) */
+
+/* General Reset and Body Theme */
+body {
+    margin: 0;
+    background-color: #0D1117; /* Fondo Profundo */
+    color: #C9D1D9; /* Texto Base */
+    font-family: 'Consolas', monospace, sans-serif; /* Fuente tecnológica */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Canvas y Marco */
+.canvas-wrapper {
+    width: 90vmin;
+    height: 90vmin;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #00FFFF; /* Borde Cian Neón */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7); /* Brillo Holográfico */
+    display: block;
+    background-color: #0D1117;
+}
+
+/* --- HUD (Heads-Up Display) --- */
+.hud-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(31, 43, 64, 0.9); /* Azul Profundo Transparente */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #A900FF; /* Borde Púrpura */
+    box-shadow: 0 0 10px rgba(169, 0, 255, 0.5);
+    z-index: 10;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#hud-health {
+    color: #FF4D4D; /* Rojo de Advertencia para salud */
+}
+
+/* --- Modales (Start/Game Over) --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 17, 23, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    background: #1F2B40; /* Azul Profundo */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #00FFFF; /* Marco Cian */
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.8); /* Brillo Neón Cian */
+    max-width: 450px;
+}
+
+.modal-content h1 {
+    color: #A900FF; /* Púrpura Místico */
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px #A900FF;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- Inputs y Botones (Estilo Tecnológico) --- */
+#player-name-input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #00FFFF;
+    background-color: #0D1117;
+    color: #C9D1D9;
+    border-radius: 4px;
+    font-size: 1em;
+    outline: none;
+    text-align: center;
+}
+
+button {
+    background-color: #A900FF; /* Púrpura Brillante */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #00FFFF; /* Cian */
+    color: #1F2B40; /* Texto oscuro */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
